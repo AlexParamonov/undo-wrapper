@@ -19,5 +19,10 @@ describe Undo::Wrapper do
       expect(Undo).to receive(:store).with(object, anything)
       subject.change
     end
+
+    it "does not store object state on another methods call" do
+      expect(Undo).not_to receive(:store)
+      subject.object_id
+    end
   end
 end
