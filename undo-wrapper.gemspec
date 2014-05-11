@@ -7,8 +7,8 @@ Gem::Specification.new do |spec|
   spec.version       = IO.read("VERSION")
   spec.authors       = ["Alexander Paramonov"]
   spec.email         = ["alexander.n.paramonov@gmail.com"]
-  spec.summary       = %q{Observe changes and stores object state before the change}
-  spec.description   = %q{Observe changes and stores object state before the change}
+  spec.summary       = %q{Observes changes and stores object state before the change}
+  spec.description   = %q{Observes changes and stores object state before the change}
   spec.homepage      = "http://github.com/AlexParamonov/undo-wrapper"
   spec.license       = "MIT"
 
@@ -17,7 +17,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "undo"
+  spec.add_dependency "undo", ">= 1.0.0.beta1"
   spec.add_development_dependency "bundler", "~> 1.0"
   spec.add_development_dependency "rake"
   spec.add_development_dependency "rspec", ">= 3.0.0.beta1"

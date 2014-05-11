@@ -9,5 +9,3 @@ group :test do
     gem "pry-plus" if "ruby" == RUBY_ENGINE
   end
 end
-
-gem 'undo', path: "../undo"
